@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>glow</title>
+
+    <style>
+      body {
+        background-color: white;
+      }
+
+      .glow {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: rgb(239, 150, 5);
+        box-shadow: 0 0 20px rgb(11, 230, 106);
+        animation: glow 2s infinite alternate;
+        padding: 2px;
+      }
+
+      .glow img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+      }
+
+      div {
+        margin: auto;
+      }
+
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 50px rgb(224, 145, 10);
+        }
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(24, 190, 30);
+      }
+
+      .container {
+        background-color: black;
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Glow Profile</h1>
+
+    <div class="container">
+      <div class="glow">
+        <img src="sam.jpeg" alt="profile" />
+      </div>
+    </div>
+  </body>
+</html>
